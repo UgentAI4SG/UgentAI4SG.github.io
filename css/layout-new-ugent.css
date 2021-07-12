@@ -307,14 +307,14 @@ ul#nav li a:hover, ul#nav li a:focus { background: #e9f0fa; color: #000; }
 /* x. Talks & Teaching Section
 /* ------------------------------------------------------------------ */
 
-#talks, #teaching, #publications, #staff {
+#talks, #teaching, #publications, #staff, #projects {
    background: #FFF;
    padding-top: 72px;
    padding-bottom: 0px;
    overflow: hidden;
 }
 
-#talks h1, #teaching h1, #publications h1, #staff h1 {
+#talks h1, #teaching h1, #publications h1, #staff h1, #projects h1 {
    text-transform: uppercase;
    margin-bottom: 20px;
    letter-spacing: 1px;

@@ -5,8 +5,8 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Ghent University Artificial Intelligence for Smart Grids Group (AI4SG)</title>
-	<meta name="description" content="Ghent University Artificial Intelligence for Smart Grids Group (AI4SG) ">
+	<title>Ghent University - Artificial Intelligence for Smart Grids (AI4SG)</title>
+	<meta name="description" content="Ghent University - Artificial Intelligence for Smart Grids (AI4SG) ">
 	<meta name="author" content="Chris Develder">
 
    <!-- Mobile Specific Metas
@@ -70,8 +70,9 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#staff">Team</a></li>
             <li><a class="smoothscroll" href="#publications">Publications</a></li>
-	          <li><a class="smoothscroll" href="#teaching">Teaching</a></li>
-	          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+	         <!-- TODO -- li><a class="smoothscroll" href="#projects">Projects</a></li -->
+            <li><a class="smoothscroll" href="#teaching">Teaching</a></li>
+	         <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -79,8 +80,10 @@
       <div class="row banner">
          <div class="banner-text">
      <img class="profile-pic"  src="images/logos/ugent-ai4sg-logo-color-square-01.png" alt="" />
-	   <h1 class="responsive-headline"> Artificial Intelligence-for-Smart Grids (AI4SG)<br>Research Group</h1>
-	   <h2><span> Reinforcement learning and <br> Deep learning for Smart Grids at <br><a href="http://idlab.ugent.be/">IDLab, Ghent
+	   <h1 class="responsive-headline"> Artificial Intelligence for
+         <br> Smart Grids (AI4SG)
+         <br>Research Group</h1>
+	   <h2><span> Data analytics and machine learning for Smart Grids at <br><a href="http://idlab.ugent.be/">IDLab, Ghent
          University</a> - <a href="http://www.imec.be/">imec</a>, Belgium</span></h2>
 	 	   <br>
      <div id="intro"></div>
@@ -113,6 +116,11 @@
    ================================================== -->
    <section id="publications">
    </section> <!-- Publications End -->
+
+   <!-- Projects Section
+   ================================================== -->
+   <!-- TODO -- section id="projects">
+   </section> <!-- Projects End -->
 
    <!-- Teaching Section
    ================================================== -->
@@ -166,6 +174,8 @@
         $("#about").load("sections/about.html?v=2020.08.21", setSmoothScrollOnSection("#about"));
         $("#staff").load("sections/staff.html?v=2021.02.24", setSmoothScrollOnSection("#staff"));
         $("#publications").load("sections/publications.html?v=2021.03.22", initPubSection)
+        // $("#projects").load("sections/projects.html?v=2021.07.12",
+        //     setSmoothScrollOnSection("#projects"));
         $("#teaching").load("sections/teaching.html?v=2020.08.21");
         $("#contact").load("sections/contact.html?v=2020.08.21");
       });
