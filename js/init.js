@@ -20,7 +20,6 @@
 
 var currentYear = parseInt((new Date()).getFullYear());
 var currentYearMinusOne = currentYear - 1;
-var mostRecentYear = currentYear;
 var currentMonth = parseInt((new Date()).getMonth());
 var monthBeforeWhichToShowPreviousYear = 4; // if before April, then show previous year in pubs and talks
 
@@ -255,22 +254,14 @@ function initPubSection() {
   for (var i = 2010; i <= currentYear + 1; ++i) {
     var y = i.toString();
     $('.pub' + y + ':first').before('<div class="row pubheader"><div class="twelve columns"><h4>' + y + '</h4></div></div>');
-    if ($('.pub' + y)[0]) {
-      mostRecentYear = y;
-    }
   }
   
-  // Only show publications of most recent year ...
+  // Only show publications of current year ...
   $('span.pub-classes.year').each(function () {
     var filterYear = parseInt($(this).text());
-    if (filterYear == mostRecentYear) {
-       $(this).triggerHandler("click");
+    if (filterYear == currentYear) {
+      $(this).triggerHandler("click");
     }
-    // // Alternative: show all?
-    // var filterYear = $(this).text();
-    // if (filterYear == "All") {
-    //   $(this).triggerHandler("click");
-    // }
   });
   
   // ... and the next year(s) also, if any!
@@ -283,7 +274,7 @@ function initPubSection() {
                   $(this).show();
           });
           setYearHighlightsAndCounts();
-          $(this).addClass("current"); // highlight future year button
+          $(this).addClass("current"); // highlight future year buttons
           // TODO(chris) highlight year button!
       }
   });
